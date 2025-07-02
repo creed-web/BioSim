@@ -1,0 +1,44 @@
+/* src/components/RatSimulator.css */
+
+.rat-simulator-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.sim-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.rat-image-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 600px;
+  width: 100%;
+}
+
+.rat-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+}
+
+.organ-marker {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: crimson;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.organ-marker:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+  background-color: darkred;
+}
